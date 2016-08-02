@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class exam2 {
 	public static void main(String[] args){
 		Scanner input = new Scanner(System.in);
-		System.out.print("ÇëÊäÈë¹¤×Ê £º");
+		System.out.print("è¯·è¾“å…¥å·¥èµ„ ï¼š");
 		double salary = input.nextDouble();
-		System.out.println("Ó¦½ÉÄÉµÄË°·ÑÎª£º"+salaryshui(salary));
+		System.out.println("åº”ç¼´çº³çš„ç¨Žè´¹ä¸ºï¼š"+salaryshui(salary));
 	}
 	
 	public static double salaryshui(double salary){
 		double value = salary-3500;
 		double  tallage=0; 
-		if(value<=1500){
+		if(value>0&&value<=1500){
 			tallage =value*0.03;
 		}else if(value>1500&&value<=4500){
 			tallage=1500*0.03+(value-1500)*0.1;
